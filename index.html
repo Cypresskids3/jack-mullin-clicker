@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TuTh1 Clicker Game: Banana Empire Robot Invasion</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="./images/banana.webp">
+    <script src="./click.js" defer type="module"></script>
+    <script src="./hud.js" defer type="module"></script>
+</head>
+<body>
+    <div class="grid-1">
+        <div class="grid-2">
+            <div class="grid-3">
+                <div class="flex">
+                    <p class="banana-amount">Bananas: 0</p>
+                </div>
+                <div class="flex shop-container">
+                    <img src="./images/shop.png" alt="" class="shop">
+                </div>
+            </div>
+            <div class="grid-4">
+                <div class="flex flex-center">
+                    <img src="./images/spaceship.png" alt="" class="flex spaceship">
+                </div>
+                <div class="flex attack-monkeys"></div>
+                <div class="flex flex-center">
+                    <img src="./images/tree.jpeg" alt="" class="tree">
+                </div>
+            </div>
+            <div class="flex">
+                <img src="./images/inventory.png" alt="" class="inventory">
+            </div>
+        </div>
+        <div class="ground"></div>
+    </div>
+    <div class="shop-hud">
+        <div class="x-out1">X</div>
+        <div class="items">
+            <button class="defense">Defense Upgrade</button>
+            <button class="auto-clicker">Auto Clicker Upgrade</button>
+            <button class="speed">Speed Upgrade</button>
+            <button class="weapons">Weapon Upgrade</button>
+        </div>
+        <h1 class="shop-title">Banana Bazaar</h1>
+    </div>
+    <div class="inventory-hud">
+        <div class="x-out2">X</div>
+        <h1 class="inventory-title">Inventory</h1>
+        <p class="hp-label">Monkey HP: 0</p>
+        <p class="weapon-label">Current Weapon: 
+            <img src="" alt="w" class="weapon-img">
+        </p>
+        <p class="damage">Damage: 1</p>
+        <p class="bpc">BPC: 0</p>
+        <p class="bps">BPS: 0</p>
+    </div>
+    <div class="gameover">
+        <h1 class="gameover-title">You Failed!</h1>
+        <button class="play-again">Play Again</button>
+    </div>
+    <div class="bossfight-box">
+        <div class="healthbar"></div>
+        <img src="./images/bad-time-trio-boss.png" alt="" class="boss">
+    </div>
+</body>
+</html>
